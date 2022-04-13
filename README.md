@@ -1,0 +1,1 @@
+# igniteopedia-core
