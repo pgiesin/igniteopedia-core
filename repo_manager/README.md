@@ -1,16 +1,16 @@
-# AccountPersistence
+# RepoManager 
 
 **TODO: Add description**
 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `account_persistence` to your list of dependencies in `mix.exs`:
+by adding `repo_manager` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:account_persistence, "~> 0.1.0"}
+    {:repo_manager, "~> 0.1.0"}
   ]
 end
 ```
