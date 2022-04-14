@@ -1,0 +1,2 @@
+defmodule AccountManager do
+end
