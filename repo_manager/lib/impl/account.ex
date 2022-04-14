@@ -1,4 +1,4 @@
-defmodule AccountPersistence.Impl.Account do
+defmodule RepoManager.Impl.Account do
 	use Ecto.Schema
 	import Ecto.Changeset
 

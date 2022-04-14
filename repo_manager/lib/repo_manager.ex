@@ -1,8 +1,8 @@
-defmodule AccountPersistence do
+defmodule RepoManager do
 
   import Ecto.Query, only: [from: 2]
-  alias AccountPersistence.Impl.Account
-  alias AccountPersistence.Runtime.Repo
+  alias RepoManager.Impl.Account
+  alias RepoManager.Runtime.Repo
 
   def record_account(account, in_transaction \\ fn _account -> :ok end) do
     {:ok, result} = Repo.transction(fn ->

@@ -1,6 +1,6 @@
 import Config
 
-config :account_persistence, AccountPersistence.Runtime.Repo,
+config :repo_manager, RepoManager.Runtime.Repo,
 	database: "igniteopedia_dev",
 	hostname: "localhost",
 	username: "postgres",

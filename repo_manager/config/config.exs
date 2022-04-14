@@ -1,7 +1,7 @@
 import Config
 
-config :account_persistence,
-	ecto_repos: [AccountPersistence.Runtime.Repo]
+config :repo_manager,
+	ecto_repos: [RepoManager.Runtime.Repo]
 
 config :logger, level: :info
 

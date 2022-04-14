@@ -1,9 +1,9 @@
-defmodule AccountPersistence.MixProject do
+defmodule RepoManager.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :account_persistence,
+      app: :repo_manager,
       version: "0.1.0",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule AccountPersistence.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {AccountPersistence.Runtime.Application, []}
+      mod: {RepoManager.Runtime.Application, []}
     ]
   end
 
