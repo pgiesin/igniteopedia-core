@@ -24,7 +24,8 @@ defmodule RepoManager.MixProject do
   defp deps do
     [
        {:ecto_sql, "~> 3.7"},
-       {:postgrex, "~> 0.16.2"}
+       {:postgrex, "~> 0.16.2"},
+       {:bcrypt_elixir, "~> 2.0"},
     ]
   end
 
@@ -32,6 +33,7 @@ defmodule RepoManager.MixProject do
    [
      "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
      "ecto.reset": ["ecto.drop", "ecto.setup"],
+     test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
    ]
   end
 end
