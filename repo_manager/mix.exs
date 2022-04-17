@@ -26,4 +26,11 @@ defmodule RepoManager.MixProject do
        {:postgrex, "~> 0.16.2"}
     ]
   end
+
+  defp aliases do
+   [
+     "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
+     "ecto.reset": ["ecto.drop", "ecto.setup"],
+   ]
+  end
 end
