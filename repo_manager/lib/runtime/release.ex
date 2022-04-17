@@ -1,5 +1,4 @@
 defmodule RepoManager.Runtime.Release do
-
   @app :repo_manager
 
   def migrate do
