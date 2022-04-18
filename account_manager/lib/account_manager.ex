@@ -10,9 +10,9 @@ defmodule AccountManager do
 
   defdelegate get_user!(id), to: Accounts
 
-  defdelegate change_user_registration(user, attrs), to: Accounts
+  defdelegate change_user_registration(user, attrs \\ %{}), to: Accounts
 
-  defdelegate change_user_email(user, attrs), to: Accounts
+  defdelegate change_user_email(user, attrs \\ %{}), to: Accounts
 
   defdelegate apply_user_email(user, password, attrs), to: Accounts
 
@@ -20,7 +20,7 @@ defmodule AccountManager do
 
   defdelegate deliver_update_email_instructions(user, current_email, update_email_url_fun), to: Accounts
 
-  defdelegate change_user_password(user, attrs), to: Accounts
+  defdelegate change_user_password(user, attrs \\ %{}), to: Accounts
 
   defdelegate update_user_password(user, password, attrs), to: Accounts
 
