@@ -1,7 +1,7 @@
 defmodule NotifyManager.Impl.UserNotifier do
   import Swoosh.Email
 
-  alias NofityManager.Impl.Mailer
+  alias NotifyManager.Impl.Mailer
 
   # Delivers the email using the application mailer.
   defp deliver(recipient, subject, body) do
