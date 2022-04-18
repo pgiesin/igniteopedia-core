@@ -19,7 +19,7 @@ defmodule AccountManager.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :runtime_tools, :repo_manager],
+      extra_applications: [:logger, :runtime_tools, :repo_manager, :notify_manager],
       mod: {AccountManager.Runtime.Application, []}
     ]
   end
@@ -28,6 +28,7 @@ defmodule AccountManager.MixProject do
   defp deps do
     [
       {:repo_manager, git:  "https://github.com/pgiesin/igniteopedia-core.git", sparse: "repo_manager", branch: "main"},
+      {:notify_manager, git:  "https://github.com/pgiesin/igniteopedia-core.git", sparse: "notify_manager", branch: "main"},
     ]
   end
 
